@@ -14,7 +14,7 @@ mobileMenu.addEventListener("click",function() {
     
 })
 window.addEventListener("scroll", function() {
-    if (window.pageYOffset > 600) {
+    if (window.pageYOffset > 300) {
         mainMenu.classList.remove("active-menu")
         mainMenu.classList.add("hidden-menu")
         mobileMenu.classList.remove("active-menu")
