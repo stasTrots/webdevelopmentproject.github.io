@@ -360,7 +360,7 @@ body {
     margin-bottom: 100px;
 }
 .section-about-us {
-    padding: 100px 0px;
+    padding: 50px 0px;
 }
 
 
@@ -418,10 +418,11 @@ body {
 
 }
 .our-services-item-active > .our-services-btn > button {
-    background-color: #00897b;
-    color: white;
+    background-color: white;
+    color: #00897b;
     border:2px outset white;
 }
+
 .our-services-item:hover {
     background-color: #00897b;
     color: white;
@@ -431,14 +432,26 @@ body {
     background: url(images/our-ser-mob-2.jpg) no-repeat;
 }
 .our-services-item:hover .our-services-btn > button {
-    background-color: #00897b;
-    color: white;
+    background-color: white;
+    color: #00897b;
+    border:2px outset white;
+}
+.our-services-item:hover .our-services-btn > button:hover {
+   color: white;
+   background-color: #00897b; 
+   border:2px outset #00897b;
+}
+
+.our-services-btn > button:hover {
+    background-color: white;
+    color: #00897b;
     border:2px outset white;
 }
 
+
 .section-our-servicec {
     background-color: #d7fcf6;
-    padding: 100px 0px;
+    padding: 50px 0px;
 }
 .our-servicec-items {
     display: flex;
@@ -545,7 +558,7 @@ body {
     margin: 50px 0px;
 }
 .section-latest-works {
-    padding: 100px 0px;
+    padding: 50px 0px;
 }
 
 
@@ -645,7 +658,7 @@ body {
 }
 .section-pricing-plan {
     background-color: #e6e7ec;
-    padding: 100px 0px;
+    padding: 50px 0px;
 }
 
 
@@ -704,31 +717,13 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     margin: 30px 0xp;
+    
 }
-.slider-tochka-perekl {
-    height: 15px;
-    width: 15px;
-    border: 2px solid #3949ab;
-    border-radius: 50%;
-    margin: 5px;
-}
-.slider-tochka {
-    display: flex;
-    margin: 50px 0px;
-    width: 100%;
-    justify-content: center;
-}
-.slider-tochka-perekl-acktiv {
-    height: 15px;
-    width: 15px;
-    border: 2px solid #3949ab;
-    border-radius: 50%;
-    margin: 5px;
-    background-color: #3949ab;
-}
+
 .section-our-team-member {
-    padding: 100px 0px;
+    padding: 50px 0px 100px 0px;
 }
+
 
 
             /*  section BLOG */
@@ -798,7 +793,7 @@ body {
     
 }
 .section-blog {
-    padding: 100px 0px;
+    padding: 50px 0px;
     background-color: #e3fdf9;
 }
 .section-blog-btn > button {

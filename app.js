@@ -92,38 +92,45 @@ searchImg.addEventListener("click",function() {
 
 
 
-//  animation -plan
+//  animation - our team member
 
-let activePereklList = document.querySelectorAll(".slider-tochka-perekl-mobile");
-let pricingPlanList = document.querySelectorAll(".pricing-plan-item-mobile");
-let tabItemsWrap = document.querySelector(".slider-tochka-mobile")
-
-function hideTabContent() {
-    pricingPlanList.forEach(tab => {
-        tab.classList.add("hide");
-        tab.classList.remove("show")
-    })
-    activePereklList.forEach(item => {
-        item.classList.remove("perekl-active")
-    })
-}
-function showTabContent(i=0) {
-    pricingPlanList[i].classList.add("show")
-    pricingPlanList[i].classList.remove("hide")
-    activePereklList[i].classList.add("perekl-active")
-}
-
-hideTabContent();
-showTabContent()
-tabItemsWrap.addEventListener("click",function(e) {
-    let target = e.target;
-
-    if(target.classList.contains("slider-tochka-perekl-mobile")) {
-        activePereklList.forEach((tab,i) => {
-            if(target == tab) {
-                hideTabContent();
-                showTabContent(i)
-            }
-        })
+function animationTeam () {
+    if (screen.width > 767) {
+        $('.our-team-items').slick({
+        autoplay: false,
+        autoplaySpeed: 5000,
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        dots: true,
+        arrows: false,
+     });
+    } else {
+        $('.our-team-items').slick({
+           
+            
+            
+            dots: true,
+            arrows: false,
+        });
     }
-})
+}
+animationTeam ();
+
+function animationMobilePricing () {
+    if (screen.width < 768) {
+        $('.pricing-plan-items').slick({
+            infinite: true,
+            dots: true,
+            arrows: false,
+         });
+        }
+}
+
+animationMobilePricing ();
+ 
+
+
+
+
+
